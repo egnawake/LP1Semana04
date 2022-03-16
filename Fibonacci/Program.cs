@@ -15,6 +15,11 @@ namespace Fibonacci
             Console.WriteLine($"Term {term}: {result}");
         }
 
+        /// <summary>
+        /// Calculates terms from the Fibonacci sequence.
+        /// </summary>
+        /// <param name="n">Term to find.</param>
+        /// <returns>Result for term n.</returns>
         private static int Fibonacci(int n)
         {
             if (n == 1 || n == 2)
