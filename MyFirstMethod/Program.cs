@@ -6,7 +6,8 @@ namespace MyFirstMethod
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            CountTo10();
+            CountTo10();
         }
 
         private static void CountTo10()
