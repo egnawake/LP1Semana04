@@ -16,6 +16,8 @@ namespace MyFirstMethod
             CountToN(7);
             Console.WriteLine("");
             CountToN(13);
+            Console.WriteLine("");
+            CountToN(5, 16);
         }
 
         /// <summary>
@@ -33,6 +35,19 @@ namespace MyFirstMethod
         private static void CountToN(int n)
         {
             for (int i = 1; i <= n; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
+        /// <summary>
+        /// Prints integers from n1 to n2.
+        /// </summary>
+        /// <param name="n1">First integer to be printed.</param>
+        /// <param name="n2">Last integer to be printed.</param>
+        private static void CountToN(int n1, int n2)
+        {
+            for (int i = n1; i <= n2; i++)
             {
                 Console.WriteLine(i);
             }
