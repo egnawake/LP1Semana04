@@ -6,9 +6,19 @@ namespace Fibonacci
     {
         static void Main(string[] args)
         {
-            // ask user for term
-            Console.WriteLine("Enter a term: ");
-            int term = int.Parse(Console.ReadLine());
+            int term = 1;
+
+            // use term from command-line arguments
+            // if not present, read term from user input
+            if (args.Length > 0)
+            {
+                term = int.Parse(args[0]);
+            }
+            else
+            {
+                Console.WriteLine("Enter a term: ");
+                term = int.Parse(Console.ReadLine());
+            }
 
             // print result
             int result = Fibonacci(term);
