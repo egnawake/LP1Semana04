@@ -13,10 +13,7 @@ namespace MyFirstMethod
 
         private static void CountTo10()
         {
-            for (int i = 1; i <= 10; i++)
-            {
-                Console.WriteLine(i);
-            }
+            CountToN(10);
         }
 
         private static void CountToN(int n)
