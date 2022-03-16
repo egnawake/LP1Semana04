@@ -2,6 +2,9 @@
 
 namespace MyFirstMethod
 {
+    /// <summary>
+    /// Main class.
+    /// </summary>
     class Program
     {
         /// <summary>
