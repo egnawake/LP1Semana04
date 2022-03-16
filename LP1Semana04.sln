@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPCPerks", "NPCPerks\NPCPer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPCPerksWithMethods", "NPCPerksWithMethods\NPCPerksWithMethods.csproj", "{20283BAB-2F52-478B-8308-15BAD6531305}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstMethod", "MyFirstMethod\MyFirstMethod.csproj", "{B94D0840-C285-47C7-A20A-3B9A8E38570D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{20283BAB-2F52-478B-8308-15BAD6531305}.Release|x64.Build.0 = Release|Any CPU
 		{20283BAB-2F52-478B-8308-15BAD6531305}.Release|x86.ActiveCfg = Release|Any CPU
 		{20283BAB-2F52-478B-8308-15BAD6531305}.Release|x86.Build.0 = Release|Any CPU
+		{B94D0840-C285-47C7-A20A-3B9A8E38570D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94D0840-C285-47C7-A20A-3B9A8E38570D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94D0840-C285-47C7-A20A-3B9A8E38570D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B94D0840-C285-47C7-A20A-3B9A8E38570D}.Debug|x64.Build.0 = Debug|Any CPU
+		{B94D0840-C285-47C7-A20A-3B9A8E38570D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B94D0840-C285-47C7-A20A-3B9A8E38570D}.Debug|x86.Build.0 = Debug|Any CPU
+		{B94D0840-C285-47C7-A20A-3B9A8E38570D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94D0840-C285-47C7-A20A-3B9A8E38570D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B94D0840-C285-47C7-A20A-3B9A8E38570D}.Release|x64.ActiveCfg = Release|Any CPU
+		{B94D0840-C285-47C7-A20A-3B9A8E38570D}.Release|x64.Build.0 = Release|Any CPU
+		{B94D0840-C285-47C7-A20A-3B9A8E38570D}.Release|x86.ActiveCfg = Release|Any CPU
+		{B94D0840-C285-47C7-A20A-3B9A8E38570D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
