@@ -8,6 +8,7 @@ namespace CalculatorInteractive
         {
             double a, b, result;
             string op;
+            int opCount = 0;
 
             string input;
 
@@ -59,27 +60,34 @@ namespace CalculatorInteractive
                     case "+":
                         result = Add(a, b);
                         Console.WriteLine(result);
+                        opCount++;
                         break;
                     case "-":
                         result = Subtract(a, b);
                         Console.WriteLine(result);
+                        opCount++;
                         break;
                     case "/":
                         result = Divide(a, b);
                         Console.WriteLine(result);
+                        opCount++;
                         break;
                     case "x":
                         result = Multiply(a, b);
                         Console.WriteLine(result);
+                        opCount++;
                         break;
                     case "p":
                         result = Power(a, b);
                         Console.WriteLine(result);
+                        opCount++;
                         break;
                     default:
                         break;
                 }
             }
+
+            Console.WriteLine($"Finished! Operations done: {opCount}");
         }
 
         private static double Add(double a, double b)
