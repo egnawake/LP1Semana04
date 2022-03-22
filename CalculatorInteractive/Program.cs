@@ -9,24 +9,51 @@ namespace CalculatorInteractive
             double a, b, result;
             string op;
 
-            do
+            string input;
+
+            while (true)
             {
-                // ask user for arguments
+                // ask user for operation
                 Console.Write("Op: ");
-                op = Console.ReadLine();
+                input = Console.ReadLine();
+
+                if (input == "END")
+                {
+                    break;
+                }
+
+                op = input;
+
+                // check if operation exists
                 if (!IsValidOp(op))
                 {
                     Console.WriteLine("Unknown operation, please try again");
                     continue;
                 }
 
+                // ask user for first number
                 Console.Write("First number: ");
-                a = double.Parse(Console.ReadLine());
-                Console.Write("Second number: ");
-                b = double.Parse(Console.ReadLine());
+                input = Console.ReadLine();
 
-                // get result based on selected operation
-                // if operation is invalid, show error and return
+                if (input == "END")
+                {
+                    break;
+                }
+
+                a = double.Parse(input);
+
+                // ask user for second number
+                Console.Write("Second number: ");
+                input = Console.ReadLine();
+
+                if (input == "END")
+                {
+                    break;
+                }
+
+                b = double.Parse(input);
+
+                // find and print result based on selected operation
                 switch (op)
                 {
                     case "+":
@@ -49,12 +76,10 @@ namespace CalculatorInteractive
                         result = Power(a, b);
                         Console.WriteLine(result);
                         break;
-                    case "END":
-                        break;
                     default:
                         break;
                 }
-            } while (op != "END");
+            }
         }
 
         private static double Add(double a, double b)
