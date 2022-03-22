@@ -90,31 +90,66 @@ namespace CalculatorInteractive
             Console.WriteLine($"Finished! Operations done: {opCount}");
         }
 
+        /// <summary>
+        /// Adds two numbers.
+        /// </summary>
+        /// <param name="a">First number.</param>
+        /// <param name="b">Second number.</param>
+        /// <returns>Result of adding the two arguments together.</returns>
         private static double Add(double a, double b)
         {
             return a + b;
         }
 
+        /// <summary>
+        /// Subtracts two numbers.
+        /// </summary>
+        /// <param name="a">First number.</param>
+        /// <param name="b">Second number.</param>
+        /// <returns>Result of subtracting the second argument from the first.</returns>
         private static double Subtract(double a, double b)
         {
             return a - b;
         }
 
+        /// <summary>
+        /// Divides two numbers.
+        /// </summary>
+        /// <param name="a">First number.</param>
+        /// <param name="b">Second number.</param>
+        /// <returns>Result of dividing the first argument by the second.</returns>
         private static double Divide(double a, double b)
         {
             return a / b;
         }
 
+        /// <summary>
+        /// Multiplies two numbers.
+        /// </summary>
+        /// <param name="a">First number.</param>
+        /// <param name="b">Second number.</param>
+        /// <returns>Result of multiplying the two arguments together.</returns>
         private static double Multiply(double a, double b)
         {
             return a * b;
         }
 
+        /// <summary>
+        /// Performs a power operation.
+        /// </summary>
+        /// <param name="a">The base.</param>
+        /// <param name="b">The exponent.</param>
+        /// <returns>Result of raising the first argument to the second argument.</returns>
         private static double Power(double a, double b)
         {
             return Math.Pow(a, b);
         }
 
+        /// <summary>
+        /// Checks if a given operation exists.
+        /// </summary>
+        /// <param name="op">The operation to check.</param>
+        /// <returns>True if op exists, else false.</returns>
         private static bool IsValidOp(string op)
         {
             return op == "+" || op == "-" || op == "/" || op == "x" || op == "p";
